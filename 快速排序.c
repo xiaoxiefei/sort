@@ -1,34 +1,22 @@
 #include "sort.h"
 
-void mysort(int* nums, int left, int right);
-void swap(int* a, int* b);
-#define NUMSIZE 10
+void my_quick_sort(int* nums, int left, int right);
+
 
 void quick_sort() {
-	srand((int)time(NULL));
-	int nums[NUMSIZE];
-	for (int i = 0; i < NUMSIZE; i++) {
-		nums[i] = rand() % 100 + 1;
-	}
-	printf("before sort : ");
-	for (int i = 0; i < NUMSIZE; i++) {
-		printf("%d ", nums[i]);
-	}
-	printf("\nafter sort  : ");
-	mysort(nums, 0, NUMSIZE - 1);
+	printf("*************************************************  ¿ìËÙÅÅÐò  *************************************************\n");
+	printf("after sort  : ");
+	my_quick_sort(nums, 0, NUMSIZE - 1);
 	for (int i = 0; i < NUMSIZE; i++) {
 		printf("%d ", nums[i]);
 	}
 	printf("\n");
+	puts("---------------------------------------------------------------------------------------------------------------\n");
 }
 
-void swap(int* a, int* b) {
-	int c = *a;
-	*a = *b;
-	*b = c;
-}
 
-void mysort(int* nums, int left, int right) {
+
+void my_quick_sort(int* nums, int left, int right) {
 
 	if (left >= right)return;
 	int i, j;
@@ -56,7 +44,7 @@ void mysort(int* nums, int left, int right) {
 			swap(&nums[i], &nums[left]);
 		}
 
-		mysort(nums, left, i - 1);
-		mysort(nums, i + 1, right);
+		my_quick_sort(nums, left, i - 1);
+		my_quick_sort(nums, i + 1, right);
 	}
 }

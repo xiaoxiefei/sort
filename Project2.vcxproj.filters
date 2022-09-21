@@ -15,10 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="源.c">
+    <ClCompile Include="sort.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="快速排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="冒泡排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="swap.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="data.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="选择排序.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

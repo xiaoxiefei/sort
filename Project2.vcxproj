@@ -127,8 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="data.c" />
+    <ClCompile Include="swap.c" />
+    <ClCompile Include="冒泡排序.c" />
     <ClCompile Include="快速排序.c" />
-    <ClCompile Include="源.c" />
+    <ClCompile Include="sort.c" />
+    <ClCompile Include="选择排序.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sort.h" />

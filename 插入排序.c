@@ -8,7 +8,7 @@ void insert_sort() {
 	printf("after sort  : ");
 
 
-	my_insert_sort(nums); // ÅÅĞò 
+	my_insert_sort(nums); // ÅÅĞòËã·¨
 
 
 	for (int i = 0; i < NUMSIZE; i++) {

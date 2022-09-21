@@ -14,6 +14,7 @@ void quick_sort();		//	©ЛкыеепР
 void bubble_sort();		//	ц╟ещеепР
 void select_sort();		//	я║тЯеепР
 void insert_sort();		//	╡ЕхКеепР
+void shell_sort();		//	оё╤ШеепР
 
 int nums[NUMSIZE];
 

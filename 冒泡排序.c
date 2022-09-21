@@ -9,7 +9,7 @@ void bubble_sort() {
 	printf("after sort  : ");
 
 	
-	my_bubble_sort(nums); // ≈≈–Ú
+	my_bubble_sort(nums);
 
 
 	for (int i = 0; i < NUMSIZE; i++) {

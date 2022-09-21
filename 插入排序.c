@@ -7,8 +7,8 @@ void insert_sort() {
 
 	printf("after sort  : ");
 
-	//²âÊÔ
-	my_insert_sort(nums); // ÅÅĞò
+	
+	my_insert_sort(nums); 
 
 
 	for (int i = 0; i < NUMSIZE; i++) {
@@ -19,5 +19,14 @@ void insert_sort() {
 }
 
 void my_insert_sort(int* nums) {
-
+	for (int i = 1; i < NUMSIZE; i++) {
+		int temp = nums[i];
+		int j;
+		for (j = i-1; j >= 0; j--) {
+			if (nums[j] > nums[i]) {
+				nums[j + 1] = nums[j];
+			}
+		}
+		nums[j] = temp;
+	}
 }

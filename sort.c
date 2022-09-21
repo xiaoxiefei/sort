@@ -6,4 +6,5 @@ int main() {
 	quick_sort();
 	bubble_sort();
 	select_sort();
+	insert_sort();
 }

@@ -13,6 +13,7 @@ void swap(int*, int*);
 void quick_sort();		//	øÏÀŸ≈≈–Ú
 void bubble_sort();		//	√∞≈›≈≈–Ú
 void select_sort();		//	—°‘Ò≈≈–Ú
+void insert_sort();		//	≤Â»Î≈≈–Ú
 
 int nums[NUMSIZE];
 

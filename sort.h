@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-void data();
+void data();			// 生成随机数
 void swap(int*, int*);
 void quick_sort();		//	快速排序
 void bubble_sort();		//	冒泡排序

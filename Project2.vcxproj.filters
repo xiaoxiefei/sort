@@ -33,6 +33,9 @@
     <ClCompile Include="选择排序.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="插入排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sort.h">

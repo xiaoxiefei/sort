@@ -7,4 +7,5 @@ int main() {
 	bubble_sort();
 	select_sort();
 	insert_sort();
+	shell_sort();
 }

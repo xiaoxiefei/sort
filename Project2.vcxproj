@@ -130,6 +130,7 @@
     <ClCompile Include="data.c" />
     <ClCompile Include="swap.c" />
     <ClCompile Include="冒泡排序.c" />
+    <ClCompile Include="希尔排序.c" />
     <ClCompile Include="快速排序.c" />
     <ClCompile Include="sort.c" />
     <ClCompile Include="插入排序.c" />

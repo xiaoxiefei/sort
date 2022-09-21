@@ -9,7 +9,7 @@ void select_sort() {
 	printf("after sort  : ");
 
 
-	my_select_sort(nums); // ≈≈–Ú
+	my_select_sort(nums); // ≈≈–Ú 
 
 
 	for (int i = 0; i < NUMSIZE; i++) {

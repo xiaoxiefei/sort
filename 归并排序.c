@@ -4,8 +4,8 @@ void my_merge_sort(int*, int*, int, int, int);
 
 void merge_sort() {
 	printf("*************************************************  πÈ≤¢≈≈–Ú  *************************************************\n");
-	printf("after sort  : ");
 
+	start_time = clock();
 	int temp[NUMSIZE];
 	for (int i = 0; i < NUMSIZE; i++) {
 		temp[i] = 0;
@@ -13,10 +13,16 @@ void merge_sort() {
 
 	my_merge_sort(nums, temp, 0, (NUMSIZE-1)/2, NUMSIZE-1);
 
-	for (int i = 0; i < NUMSIZE; i++) {
-		printf("%d ", nums[i]);
-	}
-	printf("\n");
+	end_time = clock();
+
+#if PRINTRESULT
+	print();
+#endif
+
+#if PRINTRUNTIME
+	printf("run time : %lf\n", (double)(end_time - start_time) / CLOCKS_PER_SEC);
+#endif
+
 	puts("---------------------------------------------------------------------------------------------------------------\n");
 }
 

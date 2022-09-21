@@ -5,12 +5,22 @@ void my_quick_sort(int* nums, int left, int right);
 
 void quick_sort() {
 	printf("*************************************************  øÏÀŸ≈≈–Ú  *************************************************\n");
-	printf("after sort  : ");
+
+	start_time = clock();
+
 	my_quick_sort(nums, 0, NUMSIZE - 1); 
-	for (int i = 0; i < NUMSIZE; i++) {
-		printf("%d ", nums[i]);
-	}
-	printf("\n");
+
+	end_time = clock();
+
+
+#if PRINTRESULT
+	print();
+#endif
+
+#if PRINTRUNTIME
+	printf("run time : %lf\n", (double)(end_time - start_time) / CLOCKS_PER_SEC);
+#endif
+
 	puts("---------------------------------------------------------------------------------------------------------------\n");
 }
 

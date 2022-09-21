@@ -5,16 +5,20 @@ void my_insert_sort(int *);
 void insert_sort() {
 	printf("*************************************************  ≤Â»Î≈≈–Ú  *************************************************\n");
 
-	printf("after sort  : ");
+	start_time = clock();
 
-	
 	my_insert_sort(nums); 
 
+	end_time = clock();
 
-	for (int i = 0; i < NUMSIZE; i++) {
-		printf("%d ", nums[i]);
-	}
-	printf("\n");
+#if PRINTRESULT
+	print();
+#endif
+
+#if PRINTRUNTIME
+	printf("run time : %lf\n", (double)(end_time - start_time) / CLOCKS_PER_SEC);
+#endif
+
 	puts("-----------------------------------------------------------------------------------------------------------------\n");
 }
 

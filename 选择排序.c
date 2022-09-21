@@ -6,16 +6,20 @@ void my_select_sort(int* nums);
 void select_sort() {
 	printf("*************************************************  —°‘Ò≈≈–Ú  *************************************************\n");
 
-	printf("after sort  : ");
-
+	start_time = clock();
 
 	my_select_sort(nums); 
 
+	end_time = clock();
 
-	for (int i = 0; i < NUMSIZE; i++) {
-		printf("%d ", nums[i]);
-	}
-	printf("\n");
+#if PRINTRESULT
+	print();
+#endif
+
+#if PRINTRUNTIME
+	printf("run time : %lf\n", (double)(end_time - start_time) / CLOCKS_PER_SEC);
+#endif
+
 	puts("-----------------------------------------------------------------------------------------------------------------\n");
 }
 

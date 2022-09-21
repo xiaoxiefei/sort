@@ -4,14 +4,21 @@ void my_shell_sort(int *nums);
 
 void shell_sort() {
 	printf("*************************************************  Ï£¶ûÅÅÐò  *************************************************\n");
-	printf("after sort  : ");
+
+	start_time = clock();
 
 	my_shell_sort(nums);
 
-	for (int i = 0; i < NUMSIZE; i++) {
-		printf("%d ", nums[i]);
-	}
-	printf("\n");
+	end_time = clock();
+
+#if PRINTRESULT
+	print();
+#endif
+
+#if PRINTRUNTIME
+	printf("run time : %lf\n", (double)(end_time - start_time) / CLOCKS_PER_SEC);
+#endif
+
 	puts("---------------------------------------------------------------------------------------------------------------\n");
 }
 

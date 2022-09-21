@@ -130,6 +130,9 @@
     <ClCompile Include="快速排序.c" />
     <ClCompile Include="源.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sort.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

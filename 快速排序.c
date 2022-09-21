@@ -6,7 +6,7 @@ void my_quick_sort(int* nums, int left, int right);
 void quick_sort() {
 	printf("*************************************************  ©ЛкыеепР  *************************************************\n");
 	printf("after sort  : ");
-	my_quick_sort(nums, 0, NUMSIZE - 1); // еепР 
+	my_quick_sort(nums, 0, NUMSIZE - 1); // еепР
 	for (int i = 0; i < NUMSIZE; i++) {
 		printf("%d ", nums[i]);
 	}

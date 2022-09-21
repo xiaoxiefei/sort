@@ -7,7 +7,7 @@ void insert_sort() {
 
 	printf("after sort  : ");
 
-
+	//≤‚ ‘
 	my_insert_sort(nums); // ≈≈–Ú
 
 

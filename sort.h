@@ -15,6 +15,7 @@ void bubble_sort();		//	√∞≈›≈≈–Ú
 void select_sort();		//	—°‘Ò≈≈–Ú
 void insert_sort();		//	≤Â»Î≈≈–Ú
 void shell_sort();		//	œ£∂˚≈≈–Ú
+void merge_sort();		//	πÈ≤¢≈≈–Ú
 
 int nums[NUMSIZE];
 

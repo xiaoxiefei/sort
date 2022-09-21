@@ -8,4 +8,5 @@ int main() {
 	select_sort();
 	insert_sort();
 	shell_sort();
+	merge_sort();
 }

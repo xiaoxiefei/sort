@@ -135,6 +135,7 @@
     <ClCompile Include="sort.c" />
     <ClCompile Include="插入排序.c" />
     <ClCompile Include="选择排序.c" />
+    <ClCompile Include="归并排序.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sort.h" />
